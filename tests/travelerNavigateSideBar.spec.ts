@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../page-objects/loginPage';
 import { DashboardPage } from '../page-objects/dashboardPage';
+import { argosScreenshot } from "@argos-ci/playwright";
 
 
 test.beforeEach(async ({ page }) => {
@@ -25,6 +26,7 @@ test('Verify Subscription Tab Navigation', async ({ page }) => {
   await expect(page.locator('h2')).toBeVisible();
   await page.getByRole('tab', { name: 'subscription' }).click();
   await dashboardPage.membershipAssert();
+  await argosScreenshot(page, "subscription page");
 
 
   // Log out and assert login page

@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../page-objects/loginPage';
 import { DashboardPage } from '../page-objects/dashboardPage';
+import { argosScreenshot } from "@argos-ci/playwright";
 
 
 test.beforeEach(async ({ page }) => {

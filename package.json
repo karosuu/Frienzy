@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {},
   "devDependencies": {
+    "@argos-ci/playwright": "^6.3.10",
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.10.0"
   },
