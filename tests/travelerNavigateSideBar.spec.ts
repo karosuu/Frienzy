@@ -26,7 +26,7 @@ test('Verify Subscription Tab Navigation', async ({ page }) => {
   await expect(page.locator('h2')).toBeVisible();
   await page.getByRole('tab', { name: 'subscription' }).click();
   await dashboardPage.membershipAssert();
-  await argosScreenshot(page, "subscription page");
+  
 
 
   // Log out and assert login page

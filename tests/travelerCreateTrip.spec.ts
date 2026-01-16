@@ -26,7 +26,7 @@ test('Create a trip as a Traveler', async ({ page }) => {
   await page.getByRole('button', { name: 'Create Trip' }).click();
   await expect(page).toHaveURL('/trip-method-selection');
   await expect(page.getByRole('heading', { name: 'Create New Trip' })).toBeVisible();
-  await argosScreenshot(page, "trip page");
+  
 
 
   // Log out and assert login page

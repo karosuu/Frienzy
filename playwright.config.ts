@@ -23,14 +23,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    process.env.CI ? ["dot"] : ["list"],
-    [
-      "@argos-ci/playwright/reporter",
-      {
-        // Upload to Argos on CI only.
-        uploadToArgos: !!process.env.CI,
-      }
-    ],
+   
     // ['allure-playwright'],
     ['html',]
   ],
