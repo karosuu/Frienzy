@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Frienzy Auomated Tests
 on:
   push:
     branches: [ main, master ]
